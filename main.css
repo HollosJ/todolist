@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background: #f0f0f0;
+  font-weight: normal;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  margin-top: 50px;
+  border-radius: 40px;
+  box-shadow: 1px 1px 5px gray;
+}
+
+#header {
+  background: #364f6b;
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 40px 40px 0 0;
+  color: #fff;
+}
+
+#header span {
+  color: #f0f0f0;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+#add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fc5185;
+}
+
+#addField {
+  font-weight: 800;
+  background-color: #fc5185;
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  color: #fff;
+  height: 30px;
+  padding: 0 10px;
+  border: none;
+}
+
+#add #addBtn,
+#add #resetBtn {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#todos {
+  background: #364f6b;
+  width: 100%;
+  padding: 20px;
+  border-radius: 0 0 40px 40px;
+}
+
+ol {
+  background-color: #fc5185;
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease;
+}
+
+ol li {
+  background-color: #43dde6;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 20px;
+  height: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+ol li .info {
+  width: 850%;
+  font-size: 1.5em;
+  line-height: 1;
+}
+ol li .box {
+  height: 100%;
+  color: #fc5185;
+  font-size: 1.5em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
